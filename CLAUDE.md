@@ -37,14 +37,14 @@ The site separates **content** (what you write) from **presentation** (the theme
 
 | What | Where | Key front-matter fields |
 |---|---|---|
-| Home / About page | `_pages/about.md` | plain prose, no special fields |
+| Home / About page | `_pages/about.md` | plain prose + HTML notice block at top |
 | CV (Markdown) | `_pages/cv.md` | plain Markdown sections |
 | Sidebar profile | `_config.yml` → `author:` block | `avatar`, `bio`, `location`, `employer`, `email`, social links |
 | Navigation bar | `_data/navigation.yml` | add/remove/reorder top-level links |
 | Publications | `_publications/*.md` | `title`, `collection: publications`, `category` (`manuscripts`/`conferences`/`books`), `date`, `venue`, `paperurl`, `slidesurl`, `bibtexurl`, `citation` |
 | Talks | `_talks/*.md` | `title`, `collection: talks`, `type` (`Talk`/`Tutorial`), `date`, `venue`, `location` |
 | Teaching | `_teaching/*.md` | `title`, `collection: teaching`, `type`, `venue`, `date`, `location` |
-| Portfolio | `_portfolio/*.md` | `title`, `collection: portfolio`, optional `header.image` |
+| Projects | `_projects/*.md` | `title`, `collection: projects`, optional `header.image` |
 | Blog posts | `_posts/YYYY-MM-DD-slug.md` | `title`, `date`, `tags`, `categories` |
 | Downloadable files | `files/` | linked as `/files/filename.pdf` |
 | Profile photo | `images/profile.jpg` | referenced in `_config.yml` `author.avatar` |
@@ -75,7 +75,27 @@ So adding a file to `_publications/` automatically populates both the Publicatio
 
 ## Current content state
 
-Most collection files (`_publications/`, `_talks/`, `_teaching/`, `_portfolio/`, `_posts/`) are **template examples** from the upstream repo and should be replaced. `_pages/about.md` and `_pages/cv.md` are also still template text. The `_config.yml` `author:` block is partially filled (name, bio, location, academic/social links done).
+The site is populated with Vaibhav's real academic/professional information. All upstream template examples have been replaced.
+
+### What is filled in
+
+- **`images/`** — contains only site assets: favicons, `profile.jpg`, `under_construction.gif`, and the `themes/` subfolder. Template placeholder images (`editing-talk.png`, `bio-photo*.jpg`, `500x300.png`) have been deleted.
+- **`files/`** — contains `cv.pdf` (linked from the CV page). Template `bibtex1.bib` still present — can be deleted (see below).
+- **`_pages/about.md`** — real bio (astrophysics focus, MSc FAU, current ML/VLM work). Has an "under construction" notice block with a GIF (`/images/under_construction.gif`) at the top.
+- **`_pages/cv.md`** — full CV: Education, Work Experience, Selected Projects, Publications (liquid loop), Interests & Skills, Workshops & Events, MSc Courses, Awards, Talks (liquid loop), Teaching (liquid loop). Has a "Download PDF" button linking to `/files/cv.pdf`.
+- **`_config.yml`** `author:` block — name, bio, location, employer, email, LinkedIn, GitHub (`whyvav`), arXiv, Google Scholar, ORCID filled in.
+- **`_data/navigation.yml`** — Publications, Projects, Talks, Teaching, CV. Blog Posts and Guide links removed.
+- **`_publications/`** — 3 real entries: VLM ISM detection (in prep, manuscripts), Colorism/EACL 2026 (conferences), Misinformation LLMs/CIKM 2025 (conferences).
+- **`_talks/`** — 6 real entries: 2 Remeis/ECAP seminars (2023), MSc thesis defense (Feb 2025), junge AG Potsdam (Jun 2025), LASS/CIKM 2025 (Nov 2025), EACL SRW 2026 (Mar 2026).
+- **`_teaching/`** — 1 entry: Remeis CCD Lab Tutor (Apr 2023 – Oct 2024).
+- **`_projects/`** — 3 entries: MSc thesis (LMC SNRs), Ising model (MCMC), Visualizing Relativity (BSc).
+
+### What still needs to be done / open items
+
+- **`_posts/`** — 5 template blog post files remain (`2012-...`, `2013-...`, `2014-...`, `2199-...`). Kept intentionally — blog posts may be added later. To re-enable the Blog Posts section in the nav, add it back to `_data/navigation.yml`.
+- **`files/bibtex1.bib`** — template artifact (fake example entry), nothing links to it. Delete it. For real per-publication BibTeX, add individual `.bib` files to `files/` and set `bibtexurl: /files/yourpaper.bib` in the publication's front matter.
+- **CV PDF** — `files/cv.pdf` should be kept up to date. The CV page links to it.
+- **`markdown_generator/`** — template Jupyter notebooks, no longer needed for routine edits.
 
 ## Deployment
 

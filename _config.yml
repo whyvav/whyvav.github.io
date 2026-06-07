@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Vaibhav Shukla"
 title_separator          : "-"
 name                     : &name "Vaibhav Shukla"
-description              : &description "whyvav's Site"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Personal academic website of Vaibhav Shukla — astrophysicist and data scientist"
 url                      : https://whyvav.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -227,7 +227,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -273,10 +273,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _projects
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
       layout: single
       author_profile: true
