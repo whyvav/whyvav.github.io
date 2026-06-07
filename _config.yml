@@ -23,7 +23,7 @@ repository               : "whyvav/whyvav.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile5.png"
+  avatar           : "profile.jpg"
   name             : "Vaibhav Shukla"
   pronouns         : # example: "she/her"  
   bio              : "Astrophysics MSc with hands-on expertise in scientific ML, generative AI, and data-driven research."
