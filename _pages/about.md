@@ -18,6 +18,8 @@ redirect_from:
 
 I am an early-career astrophysics and data-science researcher based in Erlangen, Germany, with an MSc in Physics (Astrophysics & Astroparticle Physics) from [Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)](https://www.fau.eu/).
 
+> 🛰️ Checkout [hello-world](https://whyvav.github.io/hello-world/) — an interactive observatory of live simulations drawn from my research. [[GitHub](https://github.com/whyvav/hello-world)]
+
 My research centres on the **high-energy astrophysics of the interstellar medium (ISM)** — in particular supernova remnants (SNRs), their X-ray evolution, and their interaction with the surrounding ISM. My MSc thesis combined XMM-Newton X-ray spectral analysis of an individual LMC SNR with population-level statistical methods across the complete observed LMC SNR sample. I worked as a Research Assistant and Lab Tutor at the [Dr. Karl Remeis-Sternwarte Bamberg](https://www.sternwarte.uni-erlangen.de/) (ECAP, FAU) under [Prof. Dr. Manami Sasaki](https://www.sternwarte.uni-erlangen.de/remeis-start/members/univisid/41678618/).
 
 Alongside astrophysics, I work on applying **machine learning and vision-language models** to astronomical survey data — currently developing an automated detection and classification framework for bubble-like ISM structures (SNRs, HII regions, stellar wind bubbles, planetary nebulae) in multiwavelength survey images. I have also collaborated on NLP/AI research, with conference publications on LLM-based misinformation simulation and socioeconomic bias in text-to-image generation.
