@@ -7,7 +7,13 @@ date: 2024-11-01
 
 **MSc Thesis** &ensp; | &ensp; Sep 2023 &ndash; Nov 2024 &ensp; | &ensp; Dr. Karl Remeis-Sternwarte Bamberg (ECAP, FAU)
 
-[Thesis PDF](https://www.sternwarte.uni-erlangen.de/docs/theses/2024-11_Shukla.pdf)
+[Thesis PDF](https://www.sternwarte.uni-erlangen.de/docs/theses/2024-11_Shukla.pdf) &ensp; | &ensp; [LaTeX Source](https://github.com/whyvav/MThesis)
+
+<p align="center">
+  <img src="/images/wordcloud.png" alt="Word cloud of the thesis text" width="700">
+  <br>
+  <sub>Word cloud of the thesis text, generated with the <a href="https://github.com/amueller/word_cloud"><code>wordcloud</code></a> Python package.</sub>
+</p>
 
 Reviewed the astrophysics of the origin and evolution of supernova remnants (SNRs) in the interstellar medium (ISM) as seen in X-rays, and compared 1D analytical solutions for different evolutionary phases of spherically symmetric SNRs.
 
