@@ -4,7 +4,7 @@ Personal academic website of **Vaibhav Shukla** — astrophysicist and data scie
 
 **Live site:** https://whyvav.github.io
 
-Built with the [Academic Pages](https://github.com/academicpages/academicpages.github.io) Jekyll template (itself a fork of the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme). Hosted via GitHub Pages — pushing to `main` triggers an automatic build and deploy.
+Built with the [Academic Pages](https://github.com/academicpages/academicpages.github.io) Jekyll template (itself a fork of the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme). Hosted via GitHub Pages — pushing to `main` triggers [`.github/workflows/jekyll-pages.yml`](.github/workflows/jekyll-pages.yml), which builds the site with this repo's own `Gemfile`/Ruby version and deploys it. Progress is visible under the repo's **Actions** tab ("Deploy Jekyll site to Pages").
 
 ---
 

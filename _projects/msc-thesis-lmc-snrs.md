@@ -10,7 +10,9 @@ date: 2024-11-01
 [Thesis PDF](https://www.sternwarte.uni-erlangen.de/docs/theses/2024-11_Shukla.pdf) &ensp; | &ensp; [LaTeX Source](https://github.com/whyvav/MThesis)
 
 <p align="center">
-  <img src="/images/wordcloud.png" alt="Word cloud of the thesis text" width="700">
+  <a href="/images/wordcloud.pdf">
+    <img src="/images/wordcloud.jpg" alt="Word cloud of the thesis text" width="700">
+  </a>
   <br>
   <sub>Word cloud of the thesis text, generated with the <a href="https://github.com/amueller/word_cloud"><code>wordcloud</code></a> Python package.</sub>
 </p>

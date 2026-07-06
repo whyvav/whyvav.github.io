@@ -99,4 +99,6 @@ The site is populated with Vaibhav's real academic/professional information. All
 
 ## Deployment
 
-Push to `main` → GitHub Actions builds the site → live at https://whyvav.github.io within ~1 minute. No manual deploy step.
+Push to `main` → `.github/workflows/jekyll-pages.yml` builds the site (using this repo's own `Gemfile`/Ruby version, not GitHub's legacy Pages builder) and deploys it → live at https://whyvav.github.io within ~1 minute. Progress is visible under the repo's **Actions** tab ("Deploy Jekyll site to Pages"). No manual deploy step.
+
+Pages source is set to "GitHub Actions" (Settings → Pages), not "Deploy from a branch" — don't switch it back, as the legacy builder was prone to getting silently wedged.
